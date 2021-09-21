@@ -16,5 +16,23 @@
         "flutterauthdemo": {}
       }
     }
+  },
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-flutterauthdemo-dev-14101-authRole",
+      "UnauthRoleArn": "arn:aws:iam::545356126231:role/amplify-flutterauthdemo-dev-14101-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::545356126231:role/amplify-flutterauthdemo-dev-14101-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-flutterauthdemo-dev-14101-deployment",
+      "UnauthRoleName": "amplify-flutterauthdemo-dev-14101-unauthRole",
+      "StackName": "amplify-flutterauthdemo-dev-14101",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:545356126231:stack/amplify-flutterauthdemo-dev-14101/7b91ddb0-1b0b-11ec-b712-0a44c1f6bcd4",
+      "AmplifyAppId": "d2h82umknikff7"
+    },
+    "categories": {
+      "auth": {
+        "flutterauthdemo": {}
+      }
+    }
   }
 }

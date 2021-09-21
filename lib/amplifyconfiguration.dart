@@ -12,23 +12,23 @@ const amplifyconfig = ''' {
                 "CredentialsProvider": {
                     "CognitoIdentity": {
                         "Default": {
-                            "PoolId": "us-east-1:a6e1a1a6-9591-45df-b526-f652251650f6",
-                            "Region": "us-east-1"
+                            "PoolId": "ap-southeast-2:ca1be0ba-2049-434b-8cb4-2df09b1a2a41",
+                            "Region": "ap-southeast-2"
                         }
                     }
                 },
                 "CognitoUserPool": {
                     "Default": {
-                        "PoolId": "us-east-1_E0AL44XNm",
-                        "AppClientId": "6tp01i28n3be8ae9h9kcijta6o",
-                        "Region": "us-east-1"
+                        "PoolId": "ap-southeast-2_UDFTusJ2I",
+                        "AppClientId": "5a0laotk5lcdu5m2r9iuh6tm5g",
+                        "Region": "ap-southeast-2"
                     }
                 },
                 "Auth": {
                     "Default": {
                         "OAuth": {
-                            "WebDomain": "h504ojo61g90-staging.auth.us-east-1.amazoncognito.com",
-                            "AppClientId": "6tp01i28n3be8ae9h9kcijta6o",
+                            "WebDomain": "abcabc-dev.auth.ap-southeast-2.amazoncognito.com",
+                            "AppClientId": "5a0laotk5lcdu5m2r9iuh6tm5g",
                             "SignInRedirectURI": "myapp://",
                             "SignOutRedirectURI": "myapp://",
                             "Scopes": [
@@ -39,7 +39,22 @@ const amplifyconfig = ''' {
                                 "aws.cognito.signin.user.admin"
                             ]
                         },
-                        "authenticationFlowType": "USER_SRP_AUTH"
+                        "authenticationFlowType": "USER_SRP_AUTH",
+                        "loginMechanisms": [],
+                        "signupAttributes": [
+                            "EMAIL"
+                        ],
+                        "passwordProtectionSettings": {
+                            "passwordPolicyMinLength": 8,
+                            "passwordPolicyCharacters": []
+                        },
+                        "mfaConfiguration": "OFF",
+                        "mfaTypes": [
+                            "SMS"
+                        ],
+                        "verificationMechanisms": [
+                            "EMAIL"
+                        ]
                     }
                 }
             }
